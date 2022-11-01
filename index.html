@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://www.free-css.com/free-css-templates/page283/ninom -->
+    <link rel="stylesheet" href="style.css">
+    <title>Eduford</title>
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="hero">
+        <nav>
+            <div class="logo">
+                <img src="/eduford_img/logo.png" alt="">
+            </div>
+            <ul>
+                <div class="closebar">
+                    <div class="closebar-bar"></div>
+                    <div class="closebar-bar"></div>
+                </div>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="hambar"></div>
+                <div class="hambar"></div>
+                <div class="hambar"></div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world.You just need to learn HTML,CSS,
+                Javascript and you are good to go.</p>
+                <a href="#">Visit Us to Know More</a>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="course-head">
+            <h1>Courses We Offer</h1>
+            <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+        </div>
+        <div class="courses">
+            <div class="course-box">
+                <h1>Intermediate</h1>
+                <p>Lorem ipsum dolor sit amet,consectetur
+                    adipiscing elit.Pellentesque aliquet turpis nulla,
+                    eleifend faucibus est sollicitudin ut. Maecenas
+                    ut venenatis ex,et dapibus purus Donec sit.</p>
+            </div>
+            <div class="course-box">
+                <h1>Degree</h1>
+                <p>Lorem ipsum dolor sit amet,consectetur
+                    adipiscing elit.Pellentesque aliquet turpis nulla,
+                    eleifend faucibus est sollicitudin ut. Maecenas
+                    ut venenatis ex,et dapibus purus Donec sit.</p>
+            </div>
+            <div class="course-box">
+                <h1>Post Graduation</h1>
+                <p>Lorem ipsum dolor sit amet,consectetur
+                    adipiscing elit.Pellentesque aliquet turpis nulla,
+                    eleifend faucibus est sollicitudin ut. Maecenas
+                    ut venenatis ex,et dapibus purus Donec sit.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        let navBar = document.querySelector('nav');
+        let closeBar = document.querySelector('.closebar');
+        let hamburger = document.querySelector('.hamburger');
+
+        hamburger.addEventListener("click" , ()=>{
+            navBar.classList.toggle('active');
+        })
+
+        closeBar.addEventListener("click" , ()=>{
+            navBar.classList.remove('active');
+        })
+    </script>
+    
+</body>
+</html>
