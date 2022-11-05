@@ -596,7 +596,7 @@ nav ul li a:hover::after {
         flex-direction: column;
         position: fixed;
         top: 0;
-        left: -100%;
+        left: -150%;
         width: 100vw;
         height: 100vh;
         background-color: #FF0000;
