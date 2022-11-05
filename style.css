@@ -78,7 +78,8 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-.hamburger{
+
+.hamburger {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,19 +90,23 @@ nav ul li a:hover::after {
     cursor: pointer;
     display: none;
 }
-.hambar{
+
+.hambar {
     width: 31px;
     height: 3px;
     position: absolute;
     background-color: #fff;
 }
-.hambar:first-child{
+
+.hambar:first-child {
     top: 18px;
 }
-.hambar:last-child{
+
+.hambar:last-child {
     bottom: 18px;
 }
-.closebar{
+
+.closebar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,19 +119,23 @@ nav ul li a:hover::after {
     cursor: pointer;
     display: none;
 }
-.closebar-bar{
+
+.closebar-bar {
     width: 31px;
     height: 3px;
     position: absolute;
     background-color: #fff;
 }
-.closebar-bar:first-child{
+
+.closebar-bar:first-child {
     transform: rotate(135deg);
 }
-.closebar-bar:last-child{
+
+.closebar-bar:last-child {
     transform: rotate(-135deg);
 }
-.hero{
+
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,18 +143,21 @@ nav ul li a:hover::after {
     flex-direction: column;
     width: 850px;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 6rem;
     color: #fff;
 }
-.hero p{
+
+.hero p {
     font-size: 1.7rem;
     margin: 2.5rem 0;
     color: #fff;
     line-height: 2.5rem;
     word-spacing: 2px;
 }
-.hero a{
+
+.btn {
     padding: 1.5rem 2.4rem;
     color: #fff;
     border: 2px solid #fff;
@@ -153,7 +165,8 @@ nav ul li a:hover::after {
     position: relative;
     transition: all .3s ease;
 }
-.hero a::after , .hero a::before{
+
+.btn::after, .btn::before {
     width: 40px;
     height: 2px;
     position: absolute;
@@ -161,52 +174,62 @@ nav ul li a:hover::after {
     background-color: #fff;
     transition: all .3s ease;
 }
-.hero a:hover{
+
+.btn:hover {
     background-color: #FF0000;
     border: 2px solid #FF0000;
 }
-.hero a:hover::after , .hero a:hover::before{
+
+.btn:hover::after, .btn:hover::before {
     background-color: #FF0000;
 }
-.hero a::after{
+
+.hero a::after {
     left: -12%;
     top: 50%;
 }
-.hero a::before{
+
+.hero a::before {
     right: -12%;
     top: 50%;
-} 
+}
+
 /* Courses */
-#courses{
+#courses {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 8rem 0;
 }
-.course-head{
+
+.course-head {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.course-head h1{
+
+.course-head h1 {
     font-size: 4rem;
 }
-.course-head p{
+
+.course-head p {
     font-size: 1.7rem;
     margin-top: 1.5rem;
     color: rgb(17, 17, 17);
 }
-.courses{
+
+.courses {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 4rem;
     margin-top: 3rem;
 }
-.course-box{
+
+.course-box {
     background: #ffeded;
     padding: 1.5rem;
     display: flex;
@@ -218,67 +241,553 @@ nav ul li a:hover::after {
     flex-basis: 30%;
     margin: 1.5%;
 }
-.course-box h1{
+
+.course-box h1 {
     font-size: 2rem;
 }
-.course-box p{
+
+.course-box p {
     font-size: 1.4rem;
     line-height: 2.5rem;
     margin-top: 1.5rem;
 }
+
+/* Faculties */
+#faculties {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+
+.faculties-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.faculties-head h1 {
+    font-size: 4rem;
+}
+
+.faculties-head p {
+    margin-top: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    color: rgb(16, 16, 16);
+}
+
+.faculties {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.faculties-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(/eduford_img/london.png);
+    width: 280px;
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 500px;
+    margin: 0 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.faculties-box:nth-child(2) {
+    background-image: url(/eduford_img/newyork.png);
+}
+
+.faculties-box:nth-child(3) {
+    background-image: url(/eduford_img/washington.png);
+}
+
+.faculties-box-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease;
+}
+
+.faculties-box:hover .faculties-box-inner {
+    background-color: #ff000097;
+}
+
+.faculties-box-inner h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all .4s ease;
+}
+
+.faculties-box:hover .faculties-box-inner h1 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Facilities */
+#facilities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+
+.facilities-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2.5rem;
+}
+
+.facilities-header h1 {
+    font-size: 4rem;
+}
+
+.facilities-header p {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+.facilities {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facilities-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 1rem 1.5rem;
+}
+
+.facilities-box-img {
+    width: 100%;
+}
+
+.facilities-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.facilities-box-desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    flex-direction: column;
+}
+
+.facilities-box-desc h1 {
+    font-size: 1.7rem;
+}
+
+.facilities-box-desc p {
+    font-size: 1.2rem;
+    color: rgb(86, 86, 86);
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+/* Testimonials */
+#testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+
+.testimonials-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2.5rem;
+}
+
+.testimonials-header h1 {
+    font-size: 4rem;
+}
+
+.testimonials-header p {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.testimonials-box {
+    background-color: #fadfdf;
+    border-radius: 1rem;
+    width: 450px;
+    padding: 1.5rem;
+    display: flex;
+    margin: 0 1.5rem;
+}
+
+.testimonials-box-left {
+    width: 94px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+.testimonials-box-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials-box-desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.testimonials-box-desc p {
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+
+.testimonials-box-desc h1 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+.testimonials-box-desc img {
+    width: 100px;
+}
+
+/* Enroll Now */
+#enroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.enroll {
+    width: 80%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+}
+.enroll h1{
+    font-size: 3rem;
+    color: #fff;
+    width: 600px;
+}
+.enroll a{
+    margin-top: 2.5rem;
+}
+.enroll a::after{
+    left: -24px;
+    transform: translateY(10px);
+}
+.enroll a::before{
+    right: -24px;
+    transform: translateY(10px); 
+}   
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 830px;
+}
+.footer h1{
+    font-size: 3rem;
+}
+.footer p{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    line-height: 2.5rem;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social i{
+    font-size: 2rem;
+    color: #db3425;
+    margin: 1rem;
+    cursor: pointer;
+}
+.footer h2{
+    font-size: 1.7rem;
+    color: rgb(34, 34, 34);
+    margin-top: 1.5rem;
+}
+.footer i{
+    color: #db3425;
+}
+.footer h2 a{
+    color: #db3425;
+}
+@media screen and (max-width:1025px) {
+    .facilities-box {
+        width: 235px;
+    }
+
+    .testimonials-box {
+        width: 390px;
+    }
+
+    .testimonials-box-left {
+        width: 182px;
+        height: 49px;
+    }
+}
+
 @media screen and (max-width:940px) {
-    nav ul{
+    nav ul {
         flex-direction: column;
         position: fixed;
         top: 0;
         left: -100%;
         width: 100vw;
         height: 100vh;
-       background-color: #FF0000;
+        background-color: #FF0000;
         transition: all .4s ease;
         z-index: 100;
     }
-    nav.active ul{
+
+    nav.active ul {
         left: 0;
     }
-    nav ul li{
+
+    nav ul li {
         margin: 1.5rem 0;
     }
-    .hamburger , .closebar{
+
+    .hamburger, .closebar {
         display: inherit;
     }
+
     .hero {
         width: 622px;
         padding: 0 3rem;
     }
+
+    .faculties-box {
+        width: 25%;
+    }
 }
-@media screen and (max-width:800px) {
-    .courses{
+
+@media screen and (max-width:850px) {
+    .testimonials {
         flex-direction: column;
     }
-    .course-box{
-        flex-basis: 80%;
+
+    .testimonials-box {
+        width: 80%;
+        margin: 1.5rem 0;
+    }
+
+    .testimonials-box-left {
+        width: 15vh;
+        height: 8vh;
+    }
+    .enroll{
+        width: 90%;
+    }
+    .enroll h1{
+        width: auto;
+    }
+    .footer{
+        width: auto;
+        margin: 0 4rem;
     }
 }
+
+@media screen and (max-width:800px) {
+    .courses {
+        flex-direction: column;
+    }
+
+    .course-box {
+        flex-basis: 80%;
+    }
+
+    .faculties-box {
+        width: 30%;
+    }
+
+    .facilities {
+        flex-wrap: wrap;
+    }
+
+    .facilities-box {
+        width: 289px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .faculties {
+        flex-direction: column;
+    }
+
+    .faculties-box {
+        width: 90%;
+        height: 350px;
+        margin: 1.5rem 0;
+    }
+
+    .testimonials-box-left {
+        width: 19vh;
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .facilities {
+        flex-direction: column;
+    }
+
+    .facilities-box {
+        width: 90%;
+    }
+
+    .facilities-box-img {
+        height: 270px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .hero h1 {
         font-size: 4rem;
     }
+
     .hero p {
         font-size: 1.5rem;
     }
+
     .course-head {
         padding: 0 2.5rem;
     }
+
+    .faculties-head {
+        padding: 0 2.5rem;
+    }
+
+    .testimonials-box-left {
+        width: 23vh;
+        height: 8vh;
+    }
+
+    .testimonials-header h1 {
+        font-size: 3rem;
+    }
+
+    .testimonials-header p {
+        font-size: 1.4rem;
+    }
 }
+
+@media screen and (Max-width:450px) {
+    .testimonials-box-left {
+        width: 34vh;
+    }
+
+    .testimonials-header {
+        margin: 0 1rem;
+    }
+    .footer h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (Max-width:400px) {
+    .testimonials-box {
+        width: 72%;
+    }
+    .enroll {
+        height: 450px;
+    }
+    .footer {
+        margin: 0 2rem;
+    }
+}
+
 @media screen and (Max-width:340px) {
     .hero h1 {
         font-size: 3rem;
     }
+
     .course-head h1 {
         font-size: 3rem;
     }
+
     .course-head {
         padding: 0 1.5rem;
+    }
+
+    .faculties-head h1 {
+        font-size: 3rem;
+    }
+
+    .facilities-header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .testimonials-box {
+        width: 60%;
+    }
+    .enroll h1 {
+        font-size: 2.4rem;
     }
 }
