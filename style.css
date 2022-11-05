@@ -16,7 +16,7 @@ html {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/eduford_img/hero.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(eduford_img/hero.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,7 +293,7 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(/eduford_img/london.png);
+    background-image: url(eduford_img/london.png);
     width: 280px;
     overflow: hidden;
     border-radius: 1rem;
@@ -305,11 +305,11 @@ nav ul li a:hover::after {
 }
 
 .faculties-box:nth-child(2) {
-    background-image: url(/eduford_img/newyork.png);
+    background-image: url(eduford_img/newyork.png);
 }
 
 .faculties-box:nth-child(3) {
-    background-image: url(/eduford_img/washington.png);
+    background-image: url(eduford_img/washington.png);
 }
 
 .faculties-box-inner {
@@ -504,7 +504,7 @@ nav ul li a:hover::after {
 .enroll {
     width: 80%;
     height: 400px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/eduford_img/banner2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(eduford_img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 2rem;
